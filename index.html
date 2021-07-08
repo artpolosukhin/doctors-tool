@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Invazívne výkony</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Invazívne výkony</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <!-- <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" /> -->
+                    <!-- <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button> -->
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><a class="dropdown-item" href="#!">Activity Log</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Pages</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                                Form
+                            </a>
+
+
+
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        Meno Priezvisko
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                  <!-- Main Content Goes Here -->
+                    <div class="container-fluid px-4">
+
+
+
+<div class="row">
+  <div class="col-2">
+
+  </div>
+  <div class="col-8">
+
+    <h2 class="mt-4 text-center">2021 Invazívne výkony OA I. KAIM UNB LF UK a UNB</h2>
+
+<br>
+
+    <form id=contactForm>
+
+<div class="row">
+  <div class="col-6">
+    <div class="form-group">
+    <label for="date">Dátum:</label>
+    <input type="text" class="form-control" id="date"  placeholder="">
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-group">
+    <label for="operator">Operátor (Meno doktora ktorý výkon vykonal):</label>
+    <select id="operator" class="form-control" name="operator">
+      <option value="mich">MICH</option>
+      <option value="sas">SAS</option>
+      <option value="hor">HOR</option>
+      <option value="mra">MRA</option>
+      <option value="sta">STA</option>
+      <option value="odn">ODN</option>
+      <option value="ced">CED</option>
+      <option value="hum">HUM</option>
+      <option value="dan">DAN</option>
+      <option value="rus">RUS</option>
+      <option value="nag">NAG</option>
+      <option value="rot">ROT</option>
+      <option value="bnk">BNK</option>
+      <option value="men">MEN</option>
+      <option value="pas">PAS</option>
+      <option value="cva">CVA</option>
+      <option value="van">VAN</option>
+      <option value="gad">GAD</option>
+      <option value="mim">MIM</option>
+      <option value="kra">KRA</option>
+      <option value="urb">URB</option>
+      <option value="pet">PET</option>
+      <option value="pin">PIN</option>
+      <option value="sob">SOB</option>
+      <option value="dol">DOL</option>
+      <option value="han">HAN</option>
+      <option value="sul">SUL</option>
+      <option value="stu">STU</option>
+      <option value="koz">KOZ</option>
+      <option value="val">VAL</option>
+      <option value="oll">OLL</option>
+      <option value="chvo">CHVO</option>
+      <option value="opa">OPA</option>
+      <option value="kac">KAC</option>
+      <option value="maz">MAZ</option>
+      <option value="ben">BEN</option>
+      <option value="pol">POL</option>
+      <option value="hrad">HRAD</option>
+      <option value="hrac">HRAC</option>
+      <option value="odn-i">ODN-I</option>
+      <option value="kva_kvetka">KVA Kvetka</option>
+      <option value="smooth_operator">Smooth Operator</option>
+    </select>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+<div class="col-6">
+  <div class="form-group">
+  <label for="patient_name"> Meno pacienta:</label>
+  <input type="text" class="form-control" id="patient_name"  placeholder="">
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-group">
+  <label for="patient_date_of_birth"> Rok narodenia pacienta:</label>
+  <input type="text" class="form-control" id="patient_date_of_birth"  placeholder="">
+  </div>
+</div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="col-6">
+    <div class="form-group">
+    <label for="basic_department">Základné oddelenie:</label>
+    <select id="basic_department" class="form-control" name="basic_department">
+      <option value="ort">ORT</option>
+      <option value="chir">CHIR</option>
+      <option value="uro">URO</option>
+      <option value="gyn">GYN</option>
+      <option value="plast">PLAST</option>
+      <option value="pop">POP</option>
+      <option value="kuctch">KUCTCH</option>
+      <option value="chir_ruky">CHIR RUKY</option>
+      <option value="orl">ORL</option>
+      <option value="neurochira">NEUROCHIRA</option>
+      <option value="khch">KHCH</option>
+    </select>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-group">
+    <label for="pvk_usg">PVK USG:</label>
+    <select id="pvk_usg" class="form-control" name="pvk_usg">
+      <option value="prvym_pichom">Prvym pichom</option>
+      <option value="potrebne_viacere_pichy">Potrebne viacere pichy</option>
+      <option value="midline">Midline</option>
+    </select>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+<div class="col-6">
+  <div class="form-group">
+  <label for="cvk">CVK:</label>
+  <select id="cvk" class="form-control" name="operator">
+    <option value="usg_vji">USG VJI</option>
+    <option value="usg_v.subclavia">USG v.subclavia</option>
+    <option value="usg_v.femoralis">USG v.femoralis</option>
+    <option value="vji_bez_usg">VJI bez USG</option>
+    <option value="v.subclavia_bez_usg">V. subclavia bez USG</option>
+    <option value="v.femoralis_bez_usg">V.femoralis bez USG</option>
+    <option value="picc">PICC</option>
+    <option value="usg_ekg_vji">USG + EKG VJI</option>
+    <option value="usg_s_bez_usg">USG + s EKG bez USG</option>
+    <option value="v.subclavia_ekg_bez_usg">V.subclavias EKG bez USG</option>
+  </select>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-group">
+  <label for="arterial_kateter">Arterialny katéter:</label>
+  <select id="arterial_kateter" class="form-control" name="arterial_kateter">
+    <option value="a.radialis_bez_usg">A. radialis bez USG</option>
+    <option value="a.brachialis_bez_usg">A. brachialis bez USG</option>
+    <option value="a.femoralis_bez_usg">A.femoralis bez USG</option>
+    <option value="usg_a.radialis">USG a.radialis</option>
+    <option value="usg_a.brachialis">USG a. brachialis</option>
+    <option value="usg_a.femoralis">USG a.femoralis</option>
+  </select>
+  </div>
+</div>
+</div>
+
+<br>
+<div class="row">
+<div class="col-6">
+  <div class="form-group">
+  <label for="epiduralny_kateter">Epidurálny katéter:</label>
+  <select id="epiduralny_kateter" class="form-control" name="epiduralny_kateter">
+    <option value="hrudny">Hrudny</option>
+    <option value="lumbalny">Lumbalny</option>
+    <option value="kontinualny_spinal">Kontinualny spinal</option>
+  </select>
+  </div>
+</div>
+<div class="col-6">
+  <div class="form-group">
+  <label for="blokada_perifer_nerv">Blokáda periférnych nervov:</label>
+  <select id="blokada_perifer_nerv" class="form-control" name="blokada_perifer_nerv">
+    <option value="interskalen">Interskalen</option>
+    <option value="axillaris">Axillaris</option>
+    <option value="femoralis">Femoralis</option>
+    <option value="popliteal">Popliteal</option>
+    <option value="sficb">SFICB</option>
+    <option value="esp_th">ESP Th</option>
+    <option value="esp_lumbalne">ESP lumbalne</option>
+    <option value="cervicalis_superficialis">Cervicalis superficialis</option>
+    <option value="supraklavikular">Supraklavikular</option>
+    <option value="upper_trunk">Upper trunk</option>
+    <option value="ssn">SSN</option>
+    <option value="costoklavikular">Costoklavikular</option>
+    <option value="infraklavikular">Infraklavikular</option>
+    <option value="intercostobrachialis">Intercostobrachialis</option>
+    <option value="medianus">Medianus</option>
+    <option value="radialis">Radialis</option>
+    <option value="ulnaris">Ulnaris</option>
+    <option value="parasacral">Parasacral</option>
+    <option value="lumbar_plexus">Lumbar plexus</option>
+    <option value="infrainguinal_ficb">Infrainguinal FICB</option>
+    <option value="peng">PENG</option>
+    <option value="obturator">Obturator</option>
+    <option value="cutaneus_femoris_lateralis">Cutaneus femoris lateralis</option>
+    <option value="subgluteal_ischiadicus">Subgluteal ischiadicus</option>
+    <option value="adduktor_kanal">Adduktor kanal</option>
+    <option value="femoral_triangle">Femoral triangle</option>
+    <option value="ipack">IPACK</option>
+    <option value="tibialis">Tibialis</option>
+    <option value="peroneus">Peroneus</option>
+    <option value="saphenus">Saphenus</option>
+    <option value="ankle_blok">Ankle blok</option>
+    <option value="paravertebral">Paravertebral</option>
+    <option value="pecs_1">PECS 1</option>
+    <option value="pecs_2">PECS 2</option>
+    <option value="serratus_plane">Serratus plane</option>
+    <option value="tap_subcostal">TAP subcostal</option>
+    <option value="tap_lateral">TAP lateral</option>
+    <option value="tap_posterior">TAP posterior</option>
+    <option value="qlb_lateral">QLB lateral (1)</option>
+    <option value="qlb_posterior">QLB posterior (2)</option>
+    <option value="qlb_antrerior">QLB anterior (3, TQL)</option>
+    <option value="rectus_sheath">Rectus sheath</option>
+    <option value="clavipectoral_plane">Clavipectoral plane</option>
+    <option value="suprascapularis">Suprascapularis</option>
+  </select>
+  </div>
+</div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="col-6">
+    <div class="form-group">
+    <label for="ciel_bpn">Cieľ BPN:</label>
+    <select id="ciel_bpn" class="form-control" name="ciel_bpn">
+      <option value="anasteticka">Anasteticka</option>
+      <option value="analgeticka">Analgeticka</option>
+    </select>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-group">
+    <label for="komplikacie">Komplikácie:</label>
+    <input type="text" class="form-control" id="komplikacie"  placeholder="">
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="col-6">
+    <div class="form-group">
+    <label for="patient_feedback">Pacientová spätná väzba:</label>
+    <input type="text" class="form-control" id="patient_feedback"  placeholder="">
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="form-group">
+    <label for="poznamky">Poznámky:</label>
+    <input type="text" class="form-control" id="poznamky"  placeholder="">
+    </div>
+  </div>
+</div>
+
+
+
+
+<br>
+
+
+<button type="submit" class="btn btn-primary">Ulozit</button>
+
+</form>
+  </div>
+  <div class="col-2">
+
+  </div>
+</div>
+
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Lorem Ipsum 2021</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+      <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script src="main-doc.js"></script>
+
+    </body>
+</html>
